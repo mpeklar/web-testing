@@ -4,7 +4,15 @@
 </head>
 <body>
 <p>Prije slikice</p>
-<img src="test-svg.svg" />
-<p>Poslije slikice</p>
+<img src="test-svg.svg" id="i"/>
+<p id="t">Poslije slikice</p>
+<script type="text/javascript">
+	window.onLoad = function() {
+		i = document.getElementById("i")
+		t = document.getElementById("i")
+		t.innerHTML = "Width: " + i.naturalWidth + "\nHeight: " + i.naturalHeight
+	}
+
+</script>
 </body>
 </html>
