@@ -7,7 +7,9 @@
 <img src="test-svg.svg" id="i"/>
 <p id="t">Poslije slikice</p>
 <script type="text/javascript">
+	console.log("Script!")
 	window.onload = function() {
+		console.log("Loaded!")
 		i = document.getElementById("i")
 		t = document.getElementById("i")
 		t.innerHtml = "Width: " + i.naturalWidth + "\nHeight: " + i.naturalHeight
