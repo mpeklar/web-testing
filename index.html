@@ -23,7 +23,7 @@
 <script type="text/javascript">
 	window.onload = function() {
 		i = 0
-		window.setTimeout(() => connectPeers(i), 1000)
+		window.setInterval(function() {connectPeers(i); i=i+1}, 1000)
 		console.log("Timeout set!")
 	}
 	
