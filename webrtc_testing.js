@@ -21,7 +21,7 @@
   // machine here, but we're just connecting two local objects, so we can
   // bypass that step.
   
-  function connectPeers() {
+  function connectPeers(c) {
     // Create the local connection and its event listeners
     
     localConnection = new RTCPeerConnection();
@@ -54,6 +54,7 @@
     .then(() => remoteConnection.createAnswer())
     .then(answer => remoteConnection.setLocalDescription(answer))
     .then(() => localConnection.setRemoteDescription(remoteConnection.localDescription))
+    .then(() => console.log(c))
     .catch(handleCreateDescriptionError);
   }
     
