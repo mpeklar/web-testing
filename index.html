@@ -22,11 +22,9 @@
 <script type="text/javascript" src="/webrtc_testing.js" > </script>
 <script type="text/javascript">
 	window.onload = function() {
-		console.log("Starting!")
-		for(i=0; i<280; ++i) {
-			connectPeers(i)
-		}
-		console.log("Ended!")
+		i = 0
+		window.setTimeout(() => connectPeers(i), 1000)
+		console.log("Timeout set!")
 	}
 	
 </script>
