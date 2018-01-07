@@ -1,4 +1,3 @@
-(function() {
 
   // Define "global" variables
   
@@ -107,7 +106,6 @@
   
   function handleSendChannelStatusChange(event) {
     //voided
-    }
   }
   
   // Called when the connection opens and the data
@@ -159,5 +157,4 @@
   
   // Set up an event listener which will run the startup
   // function once the page is done loading.
-  
-})();
+
