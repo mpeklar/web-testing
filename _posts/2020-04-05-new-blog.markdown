@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "New blog"
+date:   2020-04-05 14:00 +0200
+categories: announcements
+---
+
+All right, let's do this.
