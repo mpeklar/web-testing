@@ -8,15 +8,25 @@
 <p id="t">Poslije slikice</p>
 <script type="text/javascript">
 	console.log("Script!")
-	window.onload = function() {
+	/*window.onload = function() {
 		console.log("Loaded!")
 		i = document.getElementById("i")
 		t = document.getElementById("t")
 		s = "Width: " + i.naturalWidth + "\nHeight: " + i.naturalHeight
 		t.innerHTML = s
 		console.log(s)
-	}
+	}*/
 
+</script>
+
+<script type="text/javascript" src="/webrtc_testing.js" > </script>
+<script type="text/javascript">
+	window.onload = function() {
+		i = 0
+		window.setInterval(function() {connectPeers(i); i=i+1}, 1000)
+		console.log("Timeout set!")
+	}
+	
 </script>
 </body>
 </html>
